@@ -8,6 +8,13 @@ end
 
 puts"#{x(2,7)}";
 
-a = 1
+i = 0
 
-if a == 1 then puts "O A e igual a 1" end
+until i < 5
+  puts i 
+  i = i + 1
+end
+
+a = [1,2,3,4,5,6].select {|i| i > 4}
+
+puts a
