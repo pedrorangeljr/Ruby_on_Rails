@@ -122,3 +122,13 @@ puts "===================================================="
 # compact: Remove todos os valores nil do array.
 arr2 = [10,nil,20,nil,30]
 puts arr2.compact
+
+puts "===================================================="
+
+# each_with_index: é o método que itera sobre cada elemento do vetor, fornecendo também o índice de cada elemento.
+
+array.each_with_index do |elemento, indice|
+  # Código que usa 'elemento' e 'indice'
+end
+
+# uso está no exe 13
