@@ -27,5 +27,5 @@ vetor.each do |i|
 
 end
 
-puts "Quantidade de números negativos: #{quantidade_negativos}"
+puts "Quantidade de números negativos: #{quantidade_negativos.join(', ')}"
 puts "Soma dos números positivos: #{soma_positivos}"
