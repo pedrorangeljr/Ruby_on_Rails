@@ -17,3 +17,6 @@ b = [6,6,7,7,8,8,9,9]
 puts a | b # o perado concatena e remove elementos duplicados 
 puts "================="
 puts b | a
+
+numbes = {:one => 1, :two => 2, :three => 3}
+puts numbes.class
