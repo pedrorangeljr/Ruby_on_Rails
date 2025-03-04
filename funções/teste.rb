@@ -10,11 +10,41 @@ puts factorial(5).class
 
 def numero_par(x)
 
-  return "par" if x % 2 == 0 # return serve como um break faz a operação e para a execução
-                             # da função e for diferente de um número par ele retorna o quadraddo do número
+  return "par" if x % 2 == 0 # return serve como um break faz a operação parar a execução
+                             # da função, e se for diferente de um número par ele retorna o quadraddo do número.
   x**2
 
 end
 
 a = numero_par(3)
 puts a
+
+def sum(x,y); x+y; end
+puts sum(1,2)
+undef sum # serve para não definir um metodo, usado em heraça de classes cuja a classe filha nao herda um metodo da classe pai
+
+def soma (a,b)
+  return a + b 
+end
+
+resultado = soma(2,5)
+puts resultado
+
+def soma_todos(*numeros)
+
+  numeros.reduce(0){|soma, num| soma + num}
+
+end
+puts "========================================================"
+resultado = soma_todos(1,2,3,4,5)
+puts resultado
+
+puts "********************************************************"
+
+soma_proc = Proc.new{|a,b| a+b}
+puts soma_proc.call(2,3)
+
+puts "---------------------------------------------------------"
+
+soma_lambda = ->(a, b) { a + b }
+puts soma_lambda.call(2, 9) 
