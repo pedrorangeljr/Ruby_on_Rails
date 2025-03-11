@@ -64,3 +64,20 @@ end
 a = teste 1,0,3,4,5,6
 
 puts a
+
+puts "////////////////////////////////////////////////////////////////////"
+alias aka also_known_as # modifica o nome de um metodo
+
+def hello 
+  puts "Hello world"
+end
+
+alias original_hello hello
+
+def hello 
+  puts "your attetion please"
+  original_hello
+  puts "this has been a test"
+end
+
+puts hello
