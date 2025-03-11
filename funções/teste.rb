@@ -48,3 +48,19 @@ puts "---------------------------------------------------------"
 
 soma_lambda = ->(a, b) { a + b }
 puts soma_lambda.call(2, 9) 
+
+puts "------------------------------------------------------"
+
+def teste(*parametros) # recebe a quantidade de parametros que for enviada
+
+  return 1 if parametros.include? 2
+  a = "aa" + 1
+  1 + 420 -3
+rescue Exception => e
+  puts "Opa aconteceu um erro"
+  puts e.message
+end
+
+a = teste 1,0,3,4,5,6
+
+puts a
