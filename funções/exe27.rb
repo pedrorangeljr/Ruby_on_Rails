@@ -5,6 +5,7 @@ possui.
 
 =end
 
+
 def contar_pares(vetor)
   contador = 0
   
