@@ -1,25 +1,19 @@
-class Produto  
+class Produto
 
-    def initialize(nome)
-        @nome = nome 
-    end
+    attr_accessor :nome, :marca, :quantidade
 
-    def nome=(value) # metodo set
-        @nome = value 
-    end
-
-    def nome  # metodo get
-        @nome 
+    def initialize(nome,marca,quantidade)
+        @nome, @marca, @quantidade = nome, marca, quantidade
     end
 
     def mostrar(marca) 
-        puts "Marca: #{marca} - Produto: #{self.nome}"
+        puts "Marca: #{marca} - Produto: #{self.nome} - Quantidade: #{quantidade}"
     end
 end
 
 produto = Produto.new("JS8") 
 #produto.nome = "MotoG8"
-produto.mostrar("Motorola")
+produto.mostrar("Motorola", "20")
 
 
 # Exemplos do Livro A linguagem de Programação Ruby
@@ -73,7 +67,7 @@ class Point2
         Poit.new(@x*scalar,@y*scalar)
     end
 
-    def each 
+    def each  # 
         yield @x 
         yield @y 
     end
