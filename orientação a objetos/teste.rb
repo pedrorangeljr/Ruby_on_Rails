@@ -35,17 +35,50 @@ class Point
         "(#@x,#@y)"  # Apenas interpola as variaveis de instancia em uma sequencia
     end
 
-    def x 
-        @x
+    def x; @x; end # metodos getters
+    def y; @y; end 
+
+    def x=(value)   # metodos setters 
+        @x = value 
     end
 
-    def y 
-        @y
+    def y=(value) 
+        @y = value 
     end
 end
 
-p = Point.new(1,2) # um nova instância da classe Point
-q = Point.new(p.x*2, p.y*3)
+p = Point.new(1,1) # um nova instância da classe Point
+p.x = 0
+p.y = 0
 
 puts p
 
+class Point2 
+
+    attr_accessor :x, :y
+
+    def initialize(x,y)
+        @x, @y = x, y 
+    end
+
+    def +(other)
+        Point.new(@x + other.x, @y + other.y)
+    end
+
+    def -@
+        Point.new(-@x, -@y) 
+    end
+
+    def * (scalar) 
+        Poit.new(@x*scalar,@y*scalar)
+    end
+
+    def each 
+        yield @x 
+        yield @y 
+    end
+
+end
+
+p2 = Point2.new(1,2)
+p2.each {|x| print x }
