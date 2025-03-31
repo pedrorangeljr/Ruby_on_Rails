@@ -1,19 +1,3 @@
-class Produto
-
-    attr_accessor :nome, :marca, :quantidade
-
-    def initialize(nome,marca,quantidade)
-        @nome, @marca, @quantidade = nome, marca, quantidade
-    end
-
-    def mostrar(marca) 
-        puts "Marca: #{marca} - Produto: #{self.nome} - Quantidade: #{quantidade}"
-    end
-end
-
-produto = Produto.new("JS8") 
-#produto.nome = "MotoG8"
-produto.mostrar("Motorola", "20")
 
 
 # Exemplos do Livro A linguagem de Programação Ruby
@@ -55,6 +39,7 @@ class Point2
         @x, @y = x, y 
     end
 
+    
     def +(other)
         Point.new(@x + other.x, @y + other.y)
     end
@@ -76,3 +61,23 @@ end
 
 p2 = Point2.new(1,2)
 p2.each {|x| print x }
+
+class Poit3d < Point 
+
+    def initialize(x,y,z) # contrutor com 3 argumentos
+      
+        super(x,y) # sendo dois argumentos da superclasse e terceiro da classe Point3d.
+        @z = z;
+    end
+  
+end
+
+p2 = Point.new(1,2)
+p3 = Poit3d.new(1,2)
+
+print p2.to_s, p2.class
+print p3.to_s, p3.class
+
+o = Object.new 
+
+puts o.to_s
