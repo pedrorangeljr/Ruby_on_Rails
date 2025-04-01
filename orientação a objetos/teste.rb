@@ -69,6 +69,10 @@ class Poit3d < Point
         super(x,y) # sendo dois argumentos da superclasse e terceiro da classe Point3d.
         @z = z;
     end
+
+    def to_s 
+      
+    end
   
 end
 
@@ -81,3 +85,9 @@ print p3.to_s, p3.class
 o = Object.new 
 
 puts o.to_s
+
+def new(*args) 
+  o = self.allocate 
+  o.initialize(*args)
+  o
+end
