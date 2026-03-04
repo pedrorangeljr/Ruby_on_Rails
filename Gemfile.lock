@@ -145,6 +145,7 @@ GEM
       prism (>= 1.2, < 2.0)
       rbs (>= 3, < 5)
     ruby-progressbar (1.13.0)
+    rufo (0.18.2)
     securerandom (0.4.1)
     solargraph (0.58.2)
       ast (~> 2.4.3)
@@ -198,6 +199,7 @@ PLATFORMS
 DEPENDENCIES
   htmlbeautifier
   ruby-lsp (~> 0.26.6)
+  rufo (~> 0.18.2)
   solargraph (~> 0.58.2)
   web-console
 
@@ -264,6 +266,7 @@ CHECKSUMS
   rubocop-ast (1.49.0) sha256=49c3676d3123a0923d333e20c6c2dbaaae2d2287b475273fddee0c61da9f71fd
   ruby-lsp (0.26.6) sha256=1f50b21cb300586d7742190fc8446c18387f488aa0e9d276cf2bc7f3684ccda2
   ruby-progressbar (1.13.0) sha256=80fc9c47a9b640d6834e0dc7b3c94c9df37f08cb072b7761e4a71e22cff29b33
+  rufo (0.18.2) sha256=f279bea838aae7cd51149413a2dfa3383044b1c93f1469ceaddd1ca3824fc46f
   securerandom (0.4.1) sha256=cc5193d414a4341b6e225f0cb4446aceca8e50d5e1888743fac16987638ea0b1
   solargraph (0.58.2) sha256=132f1da100a5803994ce1fa3a645f33578134cfd252edef5d7c895c819534e09
   stringio (3.2.0) sha256=c37cb2e58b4ffbd33fe5cd948c05934af997b36e0b6ca6fdf43afa234cf222e1
